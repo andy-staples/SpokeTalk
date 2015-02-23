@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A16F28611A3E3CF500DFA1D3 /* foxhurt2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A16F28601A3E3CF500DFA1D3 /* foxhurt2.wav */; };
 		A1D6F83D1A2BEDCC00250CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */; };
 		A1D6F8401A2BEDCC00250CC6 /* BikeLink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F83E1A2BEDCC00250CC6 /* BikeLink.xcdatamodeld */; };
 		A1D6F8421A2BEDCC00250CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F8411A2BEDCC00250CC6 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		A1D6F8471A2BEDCC00250CC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D6F8461A2BEDCC00250CC6 /* Images.xcassets */; };
 		A1D6F84A1A2BEDCC00250CC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D6F8481A2BEDCC00250CC6 /* LaunchScreen.xib */; };
 		A1D6F8561A2BEDCC00250CC6 /* BikeLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F8551A2BEDCC00250CC6 /* BikeLinkTests.swift */; };
+		A1D6F8691A2C191F00250CC6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6F8681A2C191F00250CC6 /* CoreLocation.framework */; };
+		A1D6F86B1A2C192A00250CC6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6F86A1A2C192A00250CC6 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A144C2241A33663B00CA38F3 /* BikeLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BikeLink.entitlements; sourceTree = "<group>"; };
+		A16F28601A3E3CF500DFA1D3 /* foxhurt2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = foxhurt2.wav; sourceTree = "<group>"; };
 		A1D6F8371A2BEDCC00250CC6 /* BikeLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D6F83B1A2BEDCC00250CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,8 @@
 		A1D6F84F1A2BEDCC00250CC6 /* BikeLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D6F8541A2BEDCC00250CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D6F8551A2BEDCC00250CC6 /* BikeLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeLinkTests.swift; sourceTree = "<group>"; };
+		A1D6F8681A2C191F00250CC6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A1D6F86A1A2C192A00250CC6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D6F86B1A2C192A00250CC6 /* CoreBluetooth.framework in Frameworks */,
+				A1D6F8691A2C191F00250CC6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A16F285F1A3E3CD300DFA1D3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A16F28601A3E3CF500DFA1D3 /* foxhurt2.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		A1D6F82E1A2BEDCC00250CC6 = {
 			isa = PBXGroup;
 			children = (
+				A1D6F86A1A2C192A00250CC6 /* CoreBluetooth.framework */,
+				A1D6F8681A2C191F00250CC6 /* CoreLocation.framework */,
 				A1D6F8391A2BEDCC00250CC6 /* BikeLink */,
 				A1D6F8521A2BEDCC00250CC6 /* BikeLinkTests */,
 				A1D6F8381A2BEDCC00250CC6 /* Products */,
@@ -79,8 +98,11 @@
 		A1D6F8391A2BEDCC00250CC6 /* BikeLink */ = {
 			isa = PBXGroup;
 			children = (
+				A144C2241A33663B00CA38F3 /* BikeLink.entitlements */,
+				A1D6F85F1A2BF93B00250CC6 /* Classes */,
 				A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */,
 				A1D6F8411A2BEDCC00250CC6 /* ViewController.swift */,
+				A16F285F1A3E3CD300DFA1D3 /* Sounds */,
 				A1D6F8431A2BEDCC00250CC6 /* Main.storyboard */,
 				A1D6F8461A2BEDCC00250CC6 /* Images.xcassets */,
 				A1D6F8481A2BEDCC00250CC6 /* LaunchScreen.xib */,
@@ -113,6 +135,13 @@
 				A1D6F8541A2BEDCC00250CC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D6F85F1A2BF93B00250CC6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +193,18 @@
 				TargetAttributes = {
 					A1D6F8361A2BEDCC00250CC6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 82XLHQZN88;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					A1D6F84E1A2BEDCC00250CC6 = {
 						CreatedOnToolsVersion = 6.1;
@@ -197,6 +238,7 @@
 			files = (
 				A1D6F8451A2BEDCC00250CC6 /* Main.storyboard in Resources */,
 				A1D6F84A1A2BEDCC00250CC6 /* LaunchScreen.xib in Resources */,
+				A16F28611A3E3CF500DFA1D3 /* foxhurt2.wav in Resources */,
 				A1D6F8471A2BEDCC00250CC6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +384,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BikeLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +398,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BikeLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +461,7 @@
 				A1D6F85B1A2BEDCC00250CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1D6F85C1A2BEDCC00250CC6 /* Build configuration list for PBXNativeTarget "BikeLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +470,7 @@
 				A1D6F85E1A2BEDCC00250CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
