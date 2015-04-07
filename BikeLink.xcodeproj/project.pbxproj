@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A16F28611A3E3CF500DFA1D3 /* foxhurt2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A16F28601A3E3CF500DFA1D3 /* foxhurt2.wav */; };
+		A1A461DB1AD36CB900ECD267 /* FFTHelperST.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A461DA1AD36CB900ECD267 /* FFTHelperST.swift */; };
+		A1C83C9B1AD098D100737B2D /* audioControllerST.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C83C9A1AD098D100737B2D /* audioControllerST.swift */; };
+		A1C83C9D1AD09AA900737B2D /* DCRejectionFilterST.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C83C9C1AD09AA900737B2D /* DCRejectionFilterST.swift */; };
+		A1C83C9F1AD0A48F00737B2D /* BufferManagerST.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C83C9E1AD0A48F00737B2D /* BufferManagerST.swift */; };
 		A1D6F83D1A2BEDCC00250CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */; };
 		A1D6F8401A2BEDCC00250CC6 /* BikeLink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F83E1A2BEDCC00250CC6 /* BikeLink.xcdatamodeld */; };
 		A1D6F8421A2BEDCC00250CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F8411A2BEDCC00250CC6 /* ViewController.swift */; };
@@ -30,8 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A12DA98E1AC4C49F00CD4BE1 /* BikeLink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BikeLink-Bridging-Header.h"; sourceTree = "<group>"; };
 		A144C2241A33663B00CA38F3 /* BikeLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BikeLink.entitlements; sourceTree = "<group>"; };
 		A16F28601A3E3CF500DFA1D3 /* foxhurt2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = foxhurt2.wav; sourceTree = "<group>"; };
+		A1A461DA1AD36CB900ECD267 /* FFTHelperST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFTHelperST.swift; sourceTree = "<group>"; };
+		A1C83C9A1AD098D100737B2D /* audioControllerST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioControllerST.swift; sourceTree = "<group>"; };
+		A1C83C9C1AD09AA900737B2D /* DCRejectionFilterST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCRejectionFilterST.swift; sourceTree = "<group>"; };
+		A1C83C9E1AD0A48F00737B2D /* BufferManagerST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferManagerST.swift; sourceTree = "<group>"; };
 		A1D6F8371A2BEDCC00250CC6 /* BikeLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D6F83B1A2BEDCC00250CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +84,13 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		A1C83C8D1ACDFBAB00737B2D /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
 		A1D6F82E1A2BEDCC00250CC6 = {
 			isa = PBXGroup;
 			children = (
@@ -98,16 +114,21 @@
 		A1D6F8391A2BEDCC00250CC6 /* BikeLink */ = {
 			isa = PBXGroup;
 			children = (
+				A1C83C8D1ACDFBAB00737B2D /* Other Sources */,
 				A144C2241A33663B00CA38F3 /* BikeLink.entitlements */,
-				A1D6F85F1A2BF93B00250CC6 /* Classes */,
 				A1D6F83C1A2BEDCC00250CC6 /* AppDelegate.swift */,
 				A1D6F8411A2BEDCC00250CC6 /* ViewController.swift */,
+				A1C83C9A1AD098D100737B2D /* audioControllerST.swift */,
+				A1C83C9E1AD0A48F00737B2D /* BufferManagerST.swift */,
+				A1A461DA1AD36CB900ECD267 /* FFTHelperST.swift */,
+				A1C83C9C1AD09AA900737B2D /* DCRejectionFilterST.swift */,
 				A16F285F1A3E3CD300DFA1D3 /* Sounds */,
 				A1D6F8431A2BEDCC00250CC6 /* Main.storyboard */,
 				A1D6F8461A2BEDCC00250CC6 /* Images.xcassets */,
 				A1D6F8481A2BEDCC00250CC6 /* LaunchScreen.xib */,
 				A1D6F83E1A2BEDCC00250CC6 /* BikeLink.xcdatamodeld */,
 				A1D6F83A1A2BEDCC00250CC6 /* Supporting Files */,
+				A12DA98E1AC4C49F00CD4BE1 /* BikeLink-Bridging-Header.h */,
 			);
 			path = BikeLink;
 			sourceTree = "<group>";
@@ -135,13 +156,6 @@
 				A1D6F8541A2BEDCC00250CC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A1D6F85F1A2BF93B00250CC6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,11 @@
 			files = (
 				A1D6F8421A2BEDCC00250CC6 /* ViewController.swift in Sources */,
 				A1D6F8401A2BEDCC00250CC6 /* BikeLink.xcdatamodeld in Sources */,
+				A1C83C9F1AD0A48F00737B2D /* BufferManagerST.swift in Sources */,
+				A1A461DB1AD36CB900ECD267 /* FFTHelperST.swift in Sources */,
 				A1D6F83D1A2BEDCC00250CC6 /* AppDelegate.swift in Sources */,
+				A1C83C9B1AD098D100737B2D /* audioControllerST.swift in Sources */,
+				A1C83C9D1AD09AA900737B2D /* DCRejectionFilterST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BikeLink/Info.plist;
@@ -391,6 +410,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BikeLink/BikeLink-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -398,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BikeLink/Info.plist;
@@ -405,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BikeLink/BikeLink-Bridging-Header.h";
 			};
 			name = Release;
 		};
